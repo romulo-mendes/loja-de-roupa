@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    appDir: true,
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -7,8 +10,15 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
+    domains: ["placeholder.svg"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
     unoptimized: true,
   },
 }
 
-export default nextConfig
+module.exports = nextConfig

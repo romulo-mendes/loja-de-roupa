@@ -1,0 +1,66 @@
+import type { Product } from "@/contexts/cart-context"
+
+export const products: Product[] = [
+  {
+    id: "1",
+    name: "Camiseta Básica Premium",
+    price: 89.9,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Camisetas",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Branco", "Preto", "Cinza"],
+    description: "Camiseta básica de algodão premium, confortável e durável. Perfeita para o dia a dia.",
+  },
+  {
+    id: "2",
+    name: "Calça Jeans Skinny",
+    price: 159.9,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Calças",
+    sizes: ["36", "38", "40", "42", "44"],
+    colors: ["Azul Escuro", "Azul Claro", "Preto"],
+    description: "Calça jeans skinny com modelagem moderna e confortável. Tecido de alta qualidade.",
+  },
+  {
+    id: "3",
+    name: "Vestido Floral Verão",
+    price: 129.9,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Vestidos",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Rosa", "Azul", "Amarelo"],
+    description: "Vestido floral leve e fresco, ideal para os dias quentes de verão.",
+  },
+  {
+    id: "4",
+    name: "Blazer Executivo",
+    price: 249.9,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Blazers",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Preto", "Marinho", "Cinza"],
+    description: "Blazer elegante para ocasiões formais e profissionais. Corte moderno e sofisticado.",
+  },
+  {
+    id: "5",
+    name: "Shorts Jeans",
+    price: 79.9,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Shorts",
+    sizes: ["36", "38", "40", "42"],
+    colors: ["Azul", "Preto"],
+    description: "Shorts jeans casual, perfeito para o verão. Confortável e estiloso.",
+  },
+  {
+    id: "6",
+    name: "Blusa de Tricot",
+    price: 119.9,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Blusas",
+    sizes: ["P", "M", "G", "GG"],
+    colors: ["Bege", "Rosa", "Branco"],
+    description: "Blusa de tricot macia e aconchegante. Ideal para dias mais frescos.",
+  },
+]
+
+export const categories = ["Todos", "Camisetas", "Calças", "Vestidos", "Blazers", "Shorts", "Blusas"]
